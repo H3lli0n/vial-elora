@@ -37,3 +37,11 @@ NKRO_ENABLE = yes          # Enable N-Key Rollover
 VIA_ENABLE = yes
 VIAL_ENABLE = yes
 ENCODER_MAP_ENABLE = yes
+
+WPM_ENABLE = yes
+TAP_DANCE_ENABLE = yes
+COMBO_ENABLE = yes
+QMK_SETTINGS = yes
+LTO_ENABLE = yes
+
+SRC += hellion.c

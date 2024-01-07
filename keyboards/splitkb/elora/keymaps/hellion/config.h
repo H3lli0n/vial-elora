@@ -26,8 +26,27 @@
 
 // Default is 2, needed because keymap has 7 layers
 #define DYNAMIC_KEYMAP_LAYER_COUNT 8
+#define VIAL_TAP_DANCE_ENTRIES 20
 
 #define VIAL_KEYBOARD_UID {0xB3, 0x8D, 0x94, 0xDA, 0xB3, 0xD7, 0xDC, 0x3D}
 
 #define VIAL_UNLOCK_COMBO_ROWS { 3, 9 }
 #define VIAL_UNLOCK_COMBO_COLS { 2, 5 }
+
+/* Luna Pet by helltm */
+/* Glcdfont for layers state */
+#ifdef OLED_ENABLE
+#    undef OLED_FONT_H
+#    define OLED_FONT_H "keyboards/splitkb/elora/keymaps/hellion/glcdfont.c"
+#    define SPLIT_OLED_ENABLE
+#    define OLED_TIMEOUT 300000
+#    define OLED_UPDATE_INTERVAL 10
+#    define ANIM_SIZE 96
+#    define MIN_WALK_SPEED      10
+#    define MIN_RUN_SPEED       40
+#    define ANIM_FRAME_DURATION 200
+#endif
+
+#ifdef WPM_ENABLE
+#    define SPLIT_WPM_ENABLE
+#endif
