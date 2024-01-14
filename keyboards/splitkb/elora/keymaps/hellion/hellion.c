@@ -1,6 +1,5 @@
 #include QMK_KEYBOARD_H
 #include <stdio.h>
-#include "quantum.h"
 
 enum layers {
     _QWERTY = 0,
