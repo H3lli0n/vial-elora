@@ -24,6 +24,12 @@
 
 /// Vial-specific settings
 
+// RGBs
+#define RGBLIGHT_SPLIT
+#define RGBLIGHT_SLEEP
+#define RGB_DISABLE_WHEN_USB_SUSPENDED
+#define RGBLIGHT_DEFAULT_MODE RGBLIGHT_MODE_STATIC_LIGHT
+
 // Default is 2, needed because keymap has 7 layers
 #define DYNAMIC_KEYMAP_LAYER_COUNT 8
 #define VIAL_TAP_DANCE_ENTRIES 20
@@ -38,13 +44,15 @@
 #ifdef OLED_ENABLE
 #    undef OLED_FONT_H
 #    define OLED_FONT_H "keyboards/splitkb/elora/keymaps/hellion/glcdfont.c"
+#    define OLED_DISPLAY_128X64
 #    define SPLIT_OLED_ENABLE
 #    define OLED_TIMEOUT 300000
 #    define OLED_UPDATE_INTERVAL 10
-#    define ANIM_SIZE 96
+#    define ANIM_SIZE 32
 #    define MIN_WALK_SPEED      10
 #    define MIN_RUN_SPEED       40
 #    define ANIM_FRAME_DURATION 200
+#    define PET_ROWS            3
 #endif
 
 #ifdef WPM_ENABLE

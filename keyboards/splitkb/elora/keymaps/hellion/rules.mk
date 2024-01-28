@@ -18,6 +18,9 @@
 # OLED: optional, can be installed in socket
 OLED_ENABLE = yes          # Enable OLEDs, `yes` or `no`
 
+#Underglow
+RGBLIGHT_ENABLE = yes
+
 # Audio: optional, requires soldering
 # The Elora is equipped with a footprint
 # for the PKLCS1212E4001-R1
