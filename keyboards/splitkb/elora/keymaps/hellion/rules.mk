@@ -18,9 +18,6 @@
 # OLED: optional, can be installed in socket
 OLED_ENABLE = yes          # Enable OLEDs, `yes` or `no`
 
-#Underglow
-RGBLIGHT_ENABLE = yes
-
 # Audio: optional, requires soldering
 # The Elora is equipped with a footprint
 # for the PKLCS1212E4001-R1
@@ -39,12 +36,11 @@ NKRO_ENABLE = yes          # Enable N-Key Rollover
 
 VIA_ENABLE = yes
 VIAL_ENABLE = yes
+VIALRGB_ENABLE = yes
 ENCODER_MAP_ENABLE = yes
 
 WPM_ENABLE = yes
 TAP_DANCE_ENABLE = yes
 COMBO_ENABLE = yes
 QMK_SETTINGS = yes
-LTO_ENABLE = yes
-
 SRC += hellion.c

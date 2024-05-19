@@ -333,12 +333,6 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
 DELETE THIS LINE TO UNCOMMENT (2/2) */
 
 // Vial-specific encoder code
-void keyboard_post_init_user(void) {
-    rgblight_enable_noeeprom(); // Enables RGB, without saving settings
-    rgblight_sethsv_noeeprom(HSV_WHITE);
-    // rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
-    //rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
-}
 
 #if defined(ENCODER_MAP_ENABLE)
 bool encoder_update_user(uint8_t index, bool clockwise) {
