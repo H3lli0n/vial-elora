@@ -52,6 +52,7 @@
 #    define OLED_FONT_H "keyboards/splitkb/elora/keymaps/hellion/glcdfont.c"
 #    define OLED_DISPLAY_128X64
 #    define SPLIT_OLED_ENABLE
+#    undef OLED_TIMEOUT
 #    define OLED_TIMEOUT 300000
 #    define OLED_UPDATE_INTERVAL 10
 #    define ANIM_SIZE 32
@@ -60,6 +61,8 @@
 #    define ANIM_FRAME_DURATION 200
 #    define PET_ROWS            3
 #endif
+
+
 
 #ifdef WPM_ENABLE
 #    define SPLIT_WPM_ENABLE
